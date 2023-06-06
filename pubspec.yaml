@@ -54,3 +54,6 @@ flutter:
         - asset: assets/fonts/Poppins-Thin.ttf
         - asset: assets/fonts/Poppins-ThinItalic.ttf
           style: italic
+    - family: ARCENA
+      fonts:
+        - asset: assets/fonts/ARCENA.ttf
