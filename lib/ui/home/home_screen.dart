@@ -108,13 +108,20 @@ class HomeScreen extends StatelessWidget {
                 ),
               ],
             ),
-            Text(
-              "İndirim kuponu için son 50 puan!",
-              style: TextStyle(
-                fontSize: 8,
-                fontWeight: FontWeight.w400,
-                color: AppColors.white.withOpacity(0.6),
-              ),
+            SizedBox(height: 4,),
+            Row(
+
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+
+                Text("İndirim kuponu için son 50 puan!",style: TextStyle(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 8,
+                  color: AppColors.white.withOpacity(0.6),
+                ),),
+                SizedBox(width: 28,),
+
+              ],
             ),
             SizedBox(
               height: height * (46 / 812),
@@ -154,7 +161,7 @@ class HomeScreen extends StatelessWidget {
                 text2: "Ev Adresi, Muğla/Menteşe",
                 text3: "İş Adresi, Muğla/Menteşe",
                 text4: "Adres, Ankara/Yenimahalle",
-                icon: AppImages.red),
+                icon: AppImages.green),
           ],
         ),
       ),
