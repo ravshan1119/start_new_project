@@ -5,6 +5,7 @@ class AppImages {
   static const facebookIcon = "assets/images/facebook_icon.png";
   static const googleIcon = "assets/images/google_icon.png";
   static const free = "assets/images/free.png";
+  static const backgraundImage = "assets/images/backgraund_image.png";
 
   // svg
   static const arrowBack = "assets/svg/arrow_back.svg";
