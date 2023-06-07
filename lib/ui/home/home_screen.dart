@@ -5,14 +5,11 @@ import 'package:start_new_project/ui/home/widgets/zakas.dart';
 import 'package:start_new_project/utils/app_colors.dart';
 import 'package:start_new_project/utils/app_images.dart';
 
-class HomeScreen extends StatefulWidget {
+import '../../main.dart';
+
+class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
@@ -27,22 +24,14 @@ class _HomeScreenState extends State<HomeScreen> {
               Row(
                 children: [
                   Container(
-                    height: height * (44 / 812),
-                    width: height * (44 / 812),
+                    height: 44,
+                    width: 44,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: AppColors.C_E1D24A_1,
-                    ),
+                        borderRadius: BorderRadius.circular(10),
+                        color: AppColors.C_E1D24A_1),
                     child: Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: GestureDetector(
-                          onTap: () {
-                            Navigator.push(context,
-                                MaterialPageRoute(builder: (context) {
-                              return LogInScreen();
-                            }));
-                          },
-                          child: SvgPicture.asset(AppImages.arrowBack)),
+                      padding: const EdgeInsets.all(8.0),
+                      child: SvgPicture.asset(AppImages.arrowBack),
                     ),
                   ),
                   SizedBox(
